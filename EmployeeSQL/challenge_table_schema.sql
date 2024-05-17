@@ -6,4 +6,3 @@ CREATE TABLE departments (
   PRIMARY KEY (dept_no)
 );
 
-select * from departments
