@@ -11,3 +11,20 @@ ORDER BY emp_no;
 SELECT first_name, last_name, hire_date 
 FROM employees 
 WHERE DATE_PART('year',hire_date) = 1986;
+
+
+--3. List the manager of each department along with their department number, department name, employee number, last name, and first name
+
+SELECT * FROM dept_manager
+--List the manager of each department along with their department number, department name, employee number, last name, and first name.
+SELECT dm.dept_no, d.dept_name, dm.emp_no, e.last_name, e.first_name
+FROM dept_manager AS dm
+INNER JOIN departments AS d
+ON dm.dept_no = d.dept_no
+INNER JOIN employees AS e
+ON dm.emp_no = e.emp_no
+ORDER BY dept_no;
+
+
+
+
