@@ -17,15 +17,15 @@ The activities include
 
 For Data Modeling
 1. The CSVs are inspected and ERD of the tables are sketched out
-2. Tool like http://www.quickdatabasediagrams.com could be used for ERD. 
+2. Used Tool like http://www.quickdatabasediagrams.com for ERD. 
 
 Data Engineering
-1. Use the information you have to create a table schema for each of the six CSV files.
-2. Specify data types, primary keys, foreign keys, and other constraints.
-3. Then import each CSV file into the corresponding SQL table.
+1. Using information available create a table schema for each of the six CSV files.
+2. Then Specify data types, primary keys, foreign keys, and other constraints.
+3. Then imported each CSV file into the corresponding SQL table.
 
 Data Analysis
-After completing database, do the following:
+After completing database the following was done:
 1. List the details of each employee: employee number, last name, first name, gender, and salary.
 2. List employees who were hired in 1986.
 3. List the manager of each department with the following information: department number,
@@ -35,4 +35,5 @@ After completing database, do the following:
 6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
 7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
 8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+9. At each step the git was updated
 
