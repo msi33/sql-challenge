@@ -43,7 +43,7 @@ ORDER BY last_name;
 
 
 --6 List each employee in the Sales department, including their employee number, last name, and first name.
-SELECT e.emp_no,e.last_name,e.last_name,e.first_name,d.dept_name
+SELECT e.emp_no,e.last_name,e.first_name,d.dept_name
 FROM employees AS e
 LEFT JOIN dept_emp AS d_e
 ON e.emp_no = d_e.emp_no
@@ -52,8 +52,13 @@ ON d_e.dept_no = d.dept_no
 WHERE d.dept_name = 'Sales';
 
 
-
-
-
+--7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+SELECT e.emp_no,e.last_name,e.first_name,d.dept_name
+FROM employees AS e
+LEFT JOIN dept_emp AS d_e
+ON e.emp_no = d_e.emp_no
+INNER JOIN departments AS d
+ON d_e.dept_no = d.dept_no
+WHERE d.dept_name in ('Sales', 'Development');
 
 
